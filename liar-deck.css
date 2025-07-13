@@ -1,0 +1,83 @@
+body {
+    background: #f7f7fa;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    color: #333;
+    letter-spacing: 2px;
+}
+#cardContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px 0 20px 0;
+    gap: 0px;
+    height:52px;
+}
+.card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border: 1px solid #e0e0e0;
+    padding: 24px 32px;
+    font-size: 1.2em;
+    color: #444;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+    background: #f0f0f8;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+form#gameForm {
+    background: #fff;
+    max-width: 400px;
+    margin: 0 auto 40px auto;
+    padding: 32px 24px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+label {
+    font-weight: 500;
+    color: #222;
+    margin-top: 20px;
+    margin-bottom:5px;
+}
+input[type="range"] {
+    width: 100%;
+}
+input[type="text"] {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+#numPlayersValue {
+    font-weight: bold;
+    margin-left: 8px;
+    color: #0078d4;
+}
+button#submitButton {
+    background: #0078d4;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 0;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 25px;
+}
+button#submitButton:hover {
+    background: #005fa3;
+}

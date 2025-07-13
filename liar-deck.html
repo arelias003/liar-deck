@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Liar's Deck</title>
+    <script src="liar-deck.js"></script>
+    <link rel="stylesheet" href="liar-deck.css">
+</head>
+<body>
+    <h1>Liar's Deck</h1>
+    
+    <form id="gameForm" target="#">
+        <label for="numPlayers">Number of Players: <span id="numPlayersValue">4</span></label>
+        <input type="range" id="numPlayers" name="numPlayers" min="2" max="10" value="4">
+
+
+        <label for="seed">Seed:</label>
+        <input type="text" id="seed" name="seed" placeholder="Enter seed">
+
+
+        <label for="playerPosition">Player Position:</label>
+        <input type="text" id="playerPosition" name="playerPosition" placeholder="Enter position">
+
+        <button type="button" id="submitButton">Generate Cards</button>
+    </form>
+</body>
+</html>
