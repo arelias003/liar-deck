@@ -81,3 +81,34 @@ button#submitButton {
 button#submitButton:hover {
     background: #005fa3;
 }
+#refreshButton, #regenerateButton {
+    display: block;
+    margin: 0 auto 2rem auto;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.9rem 2.2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(40,167,69,0.08);
+    transition: background 0.2s, box-shadow 0.2s;
+}
+#refreshButton:hover, #regenerateButton:hover {
+    background: #218838;
+    box-shadow: 0 4px 16px rgba(40,167,69,0.12);
+}
+
+#darkOverlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: #0000002e;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.4s cubic-bezier(.4,0,.2,1);
+    z-index: 1000;
+}
+#darkOverlay.active {
+    opacity: 1;
+}
